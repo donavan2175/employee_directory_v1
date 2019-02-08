@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(231, 231, 231);
+}
+.border-all {
+   display: flex;
+   flex-direction: column;
+   margin: 30px;
+   justify-content: flex-start;
+}
+
+.border, .border-2, .border-3, .border-4, .border-5, .border-6,
+.border-7, .border-8, .border-9, .border-10, .border-11, .border-12 {
+    background-color: white;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    height: 130px;
+    padding: 10px;
+    border: 3px solid rgb(161, 161, 161);
+    float: left;
+    border-radius: 10px;
+}
+
+.border:hover, .border-2:hover, .border-3:hover, .border-4:hover, .border-5:hover, .border-6:hover,
+.border-7:hover, .border-8:hover, .border-9:hover, .border-10:hover, .border-11:hover, .border-12:hover {
+    background-color: red;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.user #image {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.user #fullName {
+    margin-left: 110px;
+    margin-top: -90px;
+    font-size: 1.53em;
+}
+
+.description {
+    font-size: 12px;
+    margin-left: 110px;
+    margin-top: 10px;
+    color: rgb(161, 161, 161);
+}
+
+.modal, .modal-2, .modal-3, .modal-4, .modal-5, .modal-6,
+.modal-7, .modal-8, .modal-9, .modal-10, .modal-11, .modal-12 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+#image-model {
+    width: 170px;
+    border-radius: 100px;
+    margin-left: 100px;
+}
+
+.modal-content h1 {
+    color: black;
+    text-align: center;
+}
+
+.modal-content h3 {
+    text-align: center;
+    color: grey;
+}
+
+.modal-content span {
+    color: grey;
+    margin-left: 130px;
+}
+
+#address {
+    margin-left: 60px;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.close-button {
+    float: right;
+    width: 10px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: red;
+}
+
+@media (min-width: 768px) {
+    .border-all {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .border, .border-2, .border-3, .border-4, .border-5, .border-6,
+.border-7, .border-8, .border-9, .border-10, .border-11, .border-12 {
+        flex: 40%;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .border, .border-2, .border-3, .border-4, .border-5, .border-6,
+.border-7, .border-8, .border-9, .border-10, .border-11, .border-12 {
+        flex: 25%;
+    }
+}
