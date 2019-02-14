@@ -1,6 +1,11 @@
 body {
     background-color: rgb(231, 231, 231);
 }
+
+ul {
+    list-style-type: none;
+}
+
 .border-all {
    display: flex;
    flex-direction: column;
@@ -8,12 +13,11 @@ body {
    justify-content: flex-start;
 }
 
-.border, .border-2, .border-3, .border-4, .border-5, .border-6,
-.border-7, .border-8, .border-9, .border-10, .border-11, .border-12 {
+.border {
     background-color: white;
     margin: 10px;
     box-sizing: border-box;
-    width: 80%;
+    width: 50%;
     height: 130px;
     padding: 10px;
     border: 3px solid rgb(161, 161, 161);
@@ -21,8 +25,7 @@ body {
     border-radius: 10px;
 }
 
-.border:hover, .border-2:hover, .border-3:hover, .border-4:hover, .border-5:hover, .border-6:hover,
-.border-7:hover, .border-8:hover, .border-9:hover, .border-10:hover, .border-11:hover, .border-12:hover {
+.border:hover {
     background-color: red;
 }
 
@@ -124,8 +127,7 @@ h1 {
         flex-wrap: wrap;
     }
     
-    .border, .border-2, .border-3, .border-4, .border-5, .border-6,
-.border-7, .border-8, .border-9, .border-10, .border-11, .border-12 {
+    .border {
         flex: 40%;
     }
 
@@ -135,8 +137,7 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-    .border, .border-2, .border-3, .border-4, .border-5, .border-6,
-.border-7, .border-8, .border-9, .border-10, .border-11, .border-12 {
+    .border {
         flex: 25%;
     }
 }
