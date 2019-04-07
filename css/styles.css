@@ -23,10 +23,11 @@ ul {
     border: 3px solid rgb(161, 161, 161);
     float: left;
     border-radius: 10px;
+    opacity: 1;
 }
 
 #employees li:hover {
-    background-color: red;
+    opacity: 0.6;
 }
 
 h1 {
@@ -121,9 +122,12 @@ h1 {
     cursor: pointer;
 }
 
-.close {
-    background-color: red;
+.close:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
+
 
 @media (min-width: 768px) {
     #employees {
